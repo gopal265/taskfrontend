@@ -1,0 +1,30 @@
+.profile-container{
+    background-color: white;
+    padding: 30px;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1), 4px 0 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 100%;
+    width:  500px
+ }
+
+ .button-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+ }
+.profile-item{
+    padding: 10px 0px;
+}
+.detail{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(95, 48, 80);
+}
+.value{
+    font-size: 18px;
+    font-weight: 300;
+    color: blueviolet;
+}
+  
+  
