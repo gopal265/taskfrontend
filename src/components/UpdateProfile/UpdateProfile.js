@@ -8,6 +8,18 @@ function UpdateProfile({user,setUser}) {
     const [error,setError] = useState('');
     const [message,setMessage] = useState('');
     const navigate = useNavigate();
+    
+    const  formatDate =() =>{
+        if(user.dob){
+        var today = new Date(user.dob);
+        var d = (today.getDate() < 10 ? '0' : '' )+ today.getDate();
+        var m = ((today.getMonth() + 1) < 10 ? '0' :'') + (today.getMonth() + 1);
+        var y = today.getFullYear();
+        var x = String(y+"-"+m+"-"+d); 
+        return x;
+        }
+        return user.dob;
+    }
   const {
     control,
     handleSubmit,
@@ -17,7 +29,7 @@ function UpdateProfile({user,setUser}) {
         firstName : user.firstName,
         lastName : user.lastName,
         mobileNumber:user.mobileNumber,
-        dob : user.dob,
+        dob : formatDate(),
         age : user.age
     }
   }
@@ -26,6 +38,7 @@ function UpdateProfile({user,setUser}) {
   const onSubmit = async(userdata) => {
     userdata.email = user.email;
     userdata.password = user.password;
+    console.log(userdata)
     try{
         const {data} = await api.updateUser(userdata)
         setUser(data.user);

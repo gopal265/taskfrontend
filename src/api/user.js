@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const base_url = "http://localhost:4500/api/user"
+const base_url = "https://profilebackend-e16g.onrender.com/api/user"
 
 
 export const  register = (userdata) =>  axios.post(`${base_url}/register`,userdata);
