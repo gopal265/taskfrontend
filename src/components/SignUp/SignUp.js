@@ -32,7 +32,7 @@ function Signup() {
 
   useEffect(() =>{
     if(message !== ""){
-      navigate('/')   // use automatically redirect to login if the registration is sucess
+      navigate('/login')   // use automatically redirect to login if the registration is sucess
     }
   })
   return (
