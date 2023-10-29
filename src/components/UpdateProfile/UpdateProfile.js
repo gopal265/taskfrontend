@@ -89,7 +89,7 @@ function UpdateProfile({ user, setUser }) {
                                     <input
                                         {...field}
                                         type="text"
-                                        className={`form-control `}
+                                        className={`form-control ${errors.firstName ? 'is-invalid' : ''}`}
                                     />
                                 )}
                             />
@@ -108,7 +108,7 @@ function UpdateProfile({ user, setUser }) {
                                     <input
                                         {...field}
                                         type="text"
-                                        className={`form-control ${errors.name ? 'is-invalid' : ''}`}
+                                        className={`form-control ${errors.lastName ? 'is-invalid' : ''}`}
                                     />
                                 )}
                             />
@@ -130,7 +130,7 @@ function UpdateProfile({ user, setUser }) {
                                     <input
                                         {...field}
                                         type="tel"
-                                        className={`form-control `}
+                                        className={`form-control ${errors.mobileNumber ? 'is-invalid' : ''}`}
                                     />
                                 )}
                             />
@@ -149,7 +149,7 @@ function UpdateProfile({ user, setUser }) {
                                     <input
                                         {...field}
                                         type="date"
-                                        className={`form-control `}
+                                        className={`form-control ${errors.dob ? 'is-invalid' : ''}`}
                                     />
                                 )}
                             />
@@ -168,7 +168,7 @@ function UpdateProfile({ user, setUser }) {
                                     <input
                                         {...field}
                                         type="number"
-                                        className={`form-control `}
+                                        className={`form-control ${errors.age ? 'is-invalid' : ''} `}
                                     />
                                 )}
                             />

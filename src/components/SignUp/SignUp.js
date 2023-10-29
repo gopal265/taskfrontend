@@ -82,7 +82,7 @@ function Signup() {
                         {...field}
                         type="password"
                         placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
-                        className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                        className={`form-control ${errors.password ? 'is-invalid' : ''}`}
                         {...register('password')} 
                       />
                     )}
@@ -108,7 +108,7 @@ function Signup() {
                         {...field}
                         type="password"
                         placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
-                        className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                        className={`form-control ${errors.confirmPassword ? 'is-invalid' : ''}`}
                         {...register('confirmPassword')} 
                       />
                     )}
