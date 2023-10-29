@@ -26,7 +26,7 @@ Link :  https://profileui.onrender.com/
 ![Alt Text](./src/images/login.png)
 
  SignUp Page
-![Alt Text](./srcimages/signup.png)
+![Alt Text](./src/images/signup.png)
 
 Profile Page
 ![Alt Text](./src/images/profile.png)
