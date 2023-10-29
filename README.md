@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Project Name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal Profile 
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+-[Some Images](#some-images)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduction
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It is a simple website that have clean login and register user interface , the user can register and login to the website.After login,the user can see his details and update them if needed as per his requirement.
 
-### `npm test`
+## Live Project Link
+Link :  https://profileui.onrender.com/
+## Some Images
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ Landing Page
+![AltText](./src/images/landingpage.png)
 
-### `npm run build`
+ Login Page
+![Alt Text](./src/images/login.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ SignUp Page
+![Alt Text](./srcimages/signup.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Profile Page
+![Alt Text](./src/images/profile.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Update Profile Page
+![Alt Text](./src/images/updateprofile.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Prerequisites or dependencies that need to be installed or set up before running the project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Node.js](https://nodejs.org/) 
+- [npm](https://www.npmjs.com/) 
+- Other dependencies...
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Frontend**:
+  - [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+  - [Axios](https://axios-http.com/) - For making HTTP requests.
+  - [Bootstrap](https://getbootstrap.com/) - A CSS framework for responsive web design.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Backend**:
+  - [Node.js](https://nodejs.org/) - A JavaScript runtime for building server-side applications.
+  - [Express.js](https://expressjs.com/) - A web application framework for Node.js.
+  - [Mongoose](https://mongoosejs.com/) - A ODM(Object Data Modeling) library for MongoDB and Node.js.
+  - [MongoDB](https://www.mongodb.com/) - A NOSQL database to store the data of our web application.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+- **Version Control**:
+  - [Git](https://git-scm.com/) - A distributed version control system.
+  - [GitHub](https://github.com/) - A web-based platform for hosting and collaborating on Git repositories.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Package Management**:
+  - [npm](https://www.npmjs.com/) - A package manager for Node.js.
 
-### Making a Progressive Web App
+- **Code Editor**:
+  - [Visual Studio Code (VSCode)](https://code.visualstudio.com/) - A lightweight, open-source code editor.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Getting Started 
+### Instruction to run the  project locally
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Clone the repository: git clone https://github.com/gopal265/taskfrontend.git
+2. Navigate to the project directory : cd taskfrontend
+3. Install dependencies : npm install
+4. Clone the repository: git clone https://github.com/gopal265/taskbackend.git
+5. Navigate to server folder : cd taskbackend (in new terminal)
+6. Install dependencies : npm install
+7. Start the development server : npm start (in taskfrontend)
+8. Start the node server : nodemon index.js (in taskbackend in cmd only)
+9. Open your browser and visit : http://localhost:3000
+10. Note1 : Need to have Internet  for the backend to work,because the data is stored in Mongodb Atlas which is a cloud service
+11. Note2 : Need to change the base_url in src/api folder to  http://localhost:4500/api/user in the  taskfrontend
+12. Note3 : Need to change orgin in corsOptions in index.js file to  http://localhost:3000 in the taskbackend
 
-### `npm run build` fails to minify
+## Usage
+For Demo use:
+Email : admin@gmail.com
+password : 1234567
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After installing and running the project locally,when you go http://localhost:3000 . You will be landed in the landing.We can see two options sigup and login.If select login you will redirect to login  page where you need to enter the Email Id and password.If you have not register,you can click register below  button and it will navigate to register page where you can reigster.Or you can use the above mentioned credentials for a demo use.After login,you can see a Profile page where you can see your details and you update them by clicking the update button or you can click logout button to logout.

@@ -18,7 +18,7 @@ function Signup() {
   } = useForm();
   
   const onSubmit = async(userdata) => {
-    // Implement user registration logic here
+    //  user registration logic  same as login 
     try {
         
       const {data} =  await api.register(userdata)
@@ -32,7 +32,7 @@ function Signup() {
 
   useEffect(() =>{
     if(message !== ""){
-      navigate('/')
+      navigate('/')   // use automatically redirect to login if the registration is sucess
     }
   })
   return (
@@ -109,7 +109,7 @@ function Signup() {
                         type="password"
                         placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
                         className={`form-control `}
-                        {...register('confirmPassword')} // Register the input
+                        {...register('confirmPassword')} 
                       />
                     )}
                   />
@@ -127,7 +127,7 @@ function Signup() {
                   </button>
                 </div>
               </form>
-              <div className='form-extra'>Already have an account? <span className="form-navigate" onClick={()=> navigate("/")}>Login</span></div>
+              <div className='form-extra'>Already have an account? <span className="form-navigate" onClick={()=> navigate("/login")}>Login</span></div>
             </div>
             </div>
             </div>
